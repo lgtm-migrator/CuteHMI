@@ -1,6 +1,0 @@
-Solution:
-
-When unsolved problem became solved or workaround is no longer necessary, do
-not delete "id.*" files, but turn them into "id.solved.target.cause.txt". Add
-"Solution:" section and describe how the problem has been solved (e.g. bug has
-been fixed).

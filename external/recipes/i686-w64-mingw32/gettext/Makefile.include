@@ -1,6 +1,0 @@
-GETTEXT_DEPLOY_DIR = $(DEPLOY_DIR)
-GETTEXT_INSTALL_DIR = $(INSTALL_DIR)/gettext
-
-$(GETTEXT_INSTALL_DIR):
-	$(MAKE) -C ../gettext buildinstall
-

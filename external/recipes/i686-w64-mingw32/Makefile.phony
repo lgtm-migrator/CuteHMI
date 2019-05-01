@@ -1,4 +1,0 @@
-.PHONY: archive sourcedir portdir port builddir buildconfigure build buildinstall deploylib deployinclude deploy all \
-	deployclean mostlyclean clean \
-	buildclean builduninstall
-
