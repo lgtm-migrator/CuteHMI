@@ -36,7 +36,7 @@ Note: While most of the project uses GNU Lesser General Public License version
 
 Consecutive branch numbers denote successive iterations of the project.
 Iteration of the project is related to build framework (repository layout and
-Qbs items). Extensions and tools are versioned independently and they have their
+Qbs items). Extensions and tools are versioned independently and have their
 own [development status](doc/development-statuses.md).
 
 Branch "master" is a development branch. Development branch may contain source
@@ -71,8 +71,7 @@ https://www.qt.io/. Qt can also be shipped with Linux distribution.
 
 2. Open `CuteHMI.qbs` file with QtCreator and simply build it.
 
-3. All extensions dependent on external libraries will be disabled, if these
-libraries could not be found. To make the process of finding the libraries
+3. If external libraries for extensions cannot be found, they will be disabled. To make the process of finding the libraries
 and installing them under Windows easier, a set of Makefiles is provided, which
 allows the libraries to be build from sources. Check out
 [external](external/) libraries for more details. Each extension may
@@ -88,7 +87,7 @@ option to force Qbs to not use cached results.
 By default Qbs will compile all the products (tools and extension), even if they
 are not needed for a project. To build only specific product use
 `--products | -p` [build option](https://doc.qt.io/qbs/cli-build.html#op-op-op-op-products-op-op-op-op-p-op-lt-op-name-op-gt-op-op-op-op-op-op-lt-op-name-op-gt-op-op-op-op-op-op-op-op-op).
-For example following command will build only `CuteHMI.Examples.SimpleView.2`
+For example, the following command will build only `CuteHMI.Examples.SimpleView.2`
 extension and its dependencies, using default configuration.
 
 ```
@@ -111,12 +110,12 @@ cutehmi.view.4 CuteHMI.Examples.SimpleView.2
 ```
 
 To create your own project you can simply copy one of the examples to your own
-subdirectory in `extensions` directory (e.g. `Me/MyExtension.0`) and edit
+subdirectory in the `extensions` directory (e.g. `Me/MyExtension.0`) and edit
 `project.qbs` file. Change `name` property to match extension name (e.g. `name:
 "Me.MyExtension.0"`)
 
 After that you can use `--force-probe-execution` Qbs option or delete build
-directory and rebuild whole project. Your extension should be installed and it
+directory and rebuild the whole project. Your extension should be installed and it
 can be run with `cutehmi.view.4` tool.
 
 ```
